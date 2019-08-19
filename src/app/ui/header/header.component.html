@@ -1,0 +1,4 @@
+<div class="container" *ngIf="timeService.appTime$ | async as time">
+  <h2><strong><span >Point Of Sales</span></strong></h2>
+  <span>{{ time | date:'medium'}}</span>
+</div>

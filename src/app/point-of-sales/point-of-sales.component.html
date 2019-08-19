@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="pos-header">
+    <app-header></app-header>
+  </div>
+  <div class="pos-main">
+    <div class="pos-menu">
+      <div class="products">
+        <div class="header">
+          <span>Products List</span>
+        </div>
+        <div class="grid">
+          <app-grid-system [dataSrc]="configJson?.products"></app-grid-system>
+        </div>
+      </div>
+      <div class="deals">
+        <div class="header">
+          <span>Promotions List</span>
+        </div>
+        <div class="grid">
+          <app-grid-system [dataSrc]="filterBasedOnDayOfWeek(configJson?.promotions)"></app-grid-system>
+        </div>
+      </div>
+    </div>
+    <div class="pos-cart">
+      <app-cart [dataSource]="cartItems$ | async"></app-cart>
+    </div>
+  </div>
+  <div class="pos-footer">
+    © 2019 -- Chris A Smith
+  </div>
+</div>

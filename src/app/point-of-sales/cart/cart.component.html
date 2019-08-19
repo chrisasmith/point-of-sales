@@ -1,0 +1,45 @@
+<div class="cart">
+  <div class="header">
+    <span>Sells List</span>
+  </div>
+  <div class="items">
+    <div class="content" #items>
+      <table mat-table [dataSource]="tableData">
+        <ng-container matColumnDef="delete">
+          <th mat-header-cell *matHeaderCellDef> Delete </th>
+          <td mat-cell *matCellDef="let element; let eleCount = index;">
+            <button mat-icon-button color="warn" (click)="removeItem(eleCount)"> <i class="material-icons" style="font-size: medium">delete</i> </button>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="product">
+          <th mat-header-cell *matHeaderCellDef> Product </th>
+          <td mat-cell *matCellDef="let element"> {{element.product}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="quantity">
+          <th mat-header-cell *matHeaderCellDef> Quantity </th>
+          <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="price">
+          <th mat-header-cell *matHeaderCellDef> Price </th>
+          <td mat-cell *matCellDef="let element"> ${{element.total_price}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
+  <div class="totals">
+    <div class="values">
+      <span>Total Items: {{this.posService.totalItems}}</span>
+      <span>Combined Cost:  ${{getCostBeforeDiscount()}}</span>
+    </div>
+    <div class="controls">
+      <button mat-raised-button color="warn" [disabled]="tableData.length < 1">Cancel</button>
+      <button mat-raised-button color="primary" [disabled]="tableData.length < 1">Payment</button>
+    </div>
+  </div>
+</div>

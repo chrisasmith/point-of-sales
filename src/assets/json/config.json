@@ -1,0 +1,131 @@
+{
+  "products": [
+    {
+      "name": "Bananas",
+      "id": "p0001",
+      "category": "",
+      "price": "2.30",
+      "available": ""
+    },
+    {
+      "name": "Grapes",
+      "id": "p0002",
+      "category": "",
+      "price": "1.99",
+      "available": ""
+    },
+    {
+      "name": "Onions",
+      "id": "p0003",
+      "category": "",
+      "price": ".99",
+      "available": ""
+    },
+    {
+      "name": "Tomatoes",
+      "id": "p0004",
+      "category": "",
+      "price": "1.30",
+      "available": ""
+    },
+    {
+      "name": "Oranges",
+      "id": "p0005",
+      "category": "",
+      "price": "2.20",
+      "available": ""
+    },
+    {
+      "name": "Bread",
+      "id": "p0006",
+      "category": "",
+      "price": "3.20",
+      "available": ""
+    },
+    {
+      "name": "Rubber Bands",
+      "id": "p0007",
+      "category": "",
+      "price": "5.20",
+      "available": ""
+    },
+    {
+      "name": "Eggs",
+      "id": "p0008",
+      "category": "",
+      "price": "1.20",
+      "available": ""
+    },
+    {
+      "name": "Water",
+      "id": "p0009",
+      "category": "",
+      "price": "6.20",
+      "available": ""
+    },
+    {
+      "name": "Laundry Soap",
+      "id": "p0010",
+      "category": "",
+      "price": "12.20",
+      "available": ""
+    },
+    {
+      "name": "Ribeye Steak",
+      "id": "p0011",
+      "category": "",
+      "price": "17.95",
+      "available": ""
+    }
+  ],
+  "promotions": [
+    {
+      "name": "Buy 1 Get 2 Free",
+      "id": "promo00001",
+      "category": "discount",
+      "price": "",
+      "available": "Sun Mon Tues Wed Thur Fri Sat",
+      "applyTo": "all"
+    },
+    {
+      "name": "50% Off 1 Full Price Item",
+      "id": "promo00002",
+      "category": "discount",
+      "price": "",
+      "available": "Sun Mon Tues Wed Thur Fri Sat",
+      "applyTo": "all"
+    },
+    {
+      "name": "$10 Off Purchase of $50 or More",
+      "id": "promo00003",
+      "category": "discount",
+      "price": "",
+      "available": "Sun Mon Tues Wed Thur Fri Sat",
+      "applyTo": "all"
+    },
+    {
+      "name": "Buy one and get 2 bananas free",
+      "id": "promo00004",
+      "category": "discount",
+      "price": "",
+      "available": "Sun",
+      "applyTo": "p0001"
+    },
+    {
+      "name": "50% Off Rubber Bands",
+      "id": "promo00005",
+      "category": "discount",
+      "price": "",
+      "available": "Sun",
+      "applyTo": "p0007"
+    },
+    {
+      "name": "$10 Off Purchase of $50 or More",
+      "id": "promo00006",
+      "category": "discount",
+      "price": "",
+      "available": "Fri",
+      "applyTo": "all"
+    }
+  ]
+}
